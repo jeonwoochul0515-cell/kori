@@ -168,7 +168,7 @@ export const storeInfo = {
   address: "부산 부산진구 중앙대로680번가길 55-20 코리",
   station: "서면역 2번 출구에서 181m",
   hours: {
-    weekday: "18:00 — 03:00",
+    weekday: "18:00 — 04:00",
     weekend: "18:00 — 06:00",
   },
   phone: "0507-1338-7519",

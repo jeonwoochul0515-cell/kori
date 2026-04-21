@@ -71,7 +71,7 @@ export default function Hero() {
           <div className="hero__meta-item">
             <Clock size={14} />
             <span>
-              <strong>18:00 — 03:00</strong> · 주말 새벽 6시까지
+              <strong>18:00 — 04:00</strong> · 주말 새벽 6시까지
             </span>
           </div>
           <div className="hero__meta-divider" />
