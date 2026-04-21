@@ -1,0 +1,125 @@
+.events {
+  background: var(--kori-green-deep);
+  position: relative;
+}
+
+.events::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(224, 138, 60, 0.35),
+    transparent
+  );
+}
+
+.events__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 72px;
+  align-items: flex-start;
+}
+
+.events__left {
+  position: sticky;
+  top: 120px;
+}
+
+.events__ig {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--kori-orange);
+  border-bottom: 1px solid rgba(224, 138, 60, 0.35);
+  padding-bottom: 4px;
+  transition: all 0.25s;
+}
+
+.events__ig:hover {
+  color: var(--kori-orange-glow);
+  border-color: var(--kori-orange-glow);
+}
+
+.events__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.events__card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  padding: 36px 40px;
+  background: rgba(4, 24, 12, 0.5);
+  border: 1px solid rgba(245, 203, 160, 0.1);
+  border-radius: 24px;
+  transition: all 0.35s;
+}
+
+.events__card:hover {
+  border-color: rgba(224, 138, 60, 0.45);
+  background: rgba(14, 59, 31, 0.5);
+}
+
+.events__icon {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--kori-orange);
+  color: var(--kori-green-deep);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.events__body h3 {
+  font-family: var(--font-brand);
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: var(--kori-cream);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.events__body p {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--kori-cream);
+  opacity: 0.85;
+  margin: 0 0 14px;
+}
+
+.events__note {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--kori-dim);
+  padding: 5px 11px;
+  border-radius: 100px;
+  background: rgba(245, 203, 160, 0.08);
+}
+
+@media (max-width: 960px) {
+  .events__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .events__left {
+    position: static;
+  }
+  .events__card {
+    padding: 24px;
+    gap: 18px;
+  }
+}

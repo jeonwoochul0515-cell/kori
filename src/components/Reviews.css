@@ -1,0 +1,121 @@
+.reviews {
+  background: var(--kori-green-ink);
+}
+
+.reviews__head {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.reviews__stats {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 32px 40px;
+  background: rgba(4, 24, 12, 0.55);
+  border: 1px solid rgba(245, 203, 160, 0.1);
+  border-radius: 20px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+
+.reviews__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.reviews__stat-num {
+  font-family: var(--font-display);
+  font-size: 42px;
+  color: var(--kori-orange);
+  line-height: 1;
+}
+
+.reviews__stat-stars {
+  display: flex;
+  gap: 2px;
+  color: var(--kori-orange);
+}
+
+.reviews__stat-label {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--kori-dim);
+  text-transform: uppercase;
+}
+
+.reviews__stat-divider {
+  width: 1px;
+  height: 56px;
+  background: rgba(245, 203, 160, 0.12);
+}
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.reviews__card {
+  position: relative;
+  padding: 40px 36px 28px;
+  background: rgba(4, 24, 12, 0.55);
+  border: 1px solid rgba(245, 203, 160, 0.1);
+  border-radius: 20px;
+  transition: all 0.35s;
+}
+
+.reviews__card:hover {
+  border-color: rgba(224, 138, 60, 0.35);
+  transform: translateY(-4px);
+}
+
+.reviews__card-quote {
+  color: var(--kori-orange);
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.reviews__card-text {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--kori-cream);
+  opacity: 0.92;
+  margin: 0 0 24px;
+}
+
+.reviews__card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(245, 203, 160, 0.12);
+  font-size: 12px;
+}
+
+.reviews__card-author {
+  font-family: var(--font-brand);
+  font-size: 15px;
+  color: var(--kori-peach);
+  font-weight: 700;
+}
+
+.reviews__card-date {
+  font-family: var(--font-ui);
+  color: var(--kori-dim);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 760px) {
+  .reviews__grid {
+    grid-template-columns: 1fr;
+  }
+  .reviews__stats {
+    padding: 24px;
+    gap: 20px;
+  }
+  .reviews__stat-num { font-size: 32px; }
+}

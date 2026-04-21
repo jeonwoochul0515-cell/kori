@@ -1,0 +1,112 @@
+.signature {
+  background:
+    linear-gradient(180deg, var(--kori-green-deep), var(--kori-green-ink));
+}
+
+.signature__head {
+  max-width: 720px;
+  margin-bottom: 72px;
+}
+
+.signature__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.signature__card {
+  background: rgba(4, 24, 12, 0.6);
+  border: 1px solid rgba(245, 203, 160, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+}
+
+.signature__card:hover {
+  border-color: rgba(224, 138, 60, 0.45);
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.signature__card--0 { grid-column: span 7; }
+.signature__card--1 { grid-column: span 5; }
+.signature__card--2 { grid-column: span 5; }
+.signature__card--3 { grid-column: span 7; }
+
+.signature__image {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.signature__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s ease;
+}
+
+.signature__card:hover .signature__image img {
+  transform: scale(1.05);
+}
+
+.signature__tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 6px 12px;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  background: var(--kori-orange);
+  color: var(--kori-green-deep);
+  font-weight: 700;
+  border-radius: 100px;
+}
+
+.signature__info {
+  padding: 32px;
+}
+
+.signature__info h3 {
+  font-family: var(--font-brand);
+  font-size: clamp(26px, 3vw, 36px);
+  margin: 0 0 6px;
+  color: var(--kori-cream);
+  letter-spacing: -0.01em;
+  font-weight: 900;
+}
+
+.signature__price {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--kori-orange);
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
+}
+
+.signature__info p {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--kori-dim);
+  margin: 0;
+  max-width: 460px;
+}
+
+@media (max-width: 960px) {
+  .signature__grid {
+    grid-template-columns: 1fr;
+  }
+  .signature__card--0,
+  .signature__card--1,
+  .signature__card--2,
+  .signature__card--3 {
+    grid-column: 1 / -1;
+  }
+  .signature__info {
+    padding: 24px;
+  }
+}
