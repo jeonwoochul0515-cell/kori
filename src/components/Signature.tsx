@@ -3,11 +3,11 @@ import "./Signature.css";
 
 const dishes = [
   {
-    image: "/gallery/menu-myungran-garlic.jpg",
+    image: "/gallery/menu-scallop.jpg",
     name: "명란가리비구이",
     tag: "SIGNATURE · 대표 안주",
     price: "32,000",
-    body: "숯불에 직화로 구운 가리비 위로, 수제 명란 소스를 듬뿍. 바다의 짠맛과 불의 향이 한 입에 감돌아요.",
+    body: "숯불에 직화로 구운 가리비 위로, 수제 명란 소스를 듬뿍. 파슬리와 레몬을 곁들여 바다의 짠맛과 불의 향이 한 입에 감돌아요.",
   },
   {
     image: "/gallery/menu-bossam.jpg",

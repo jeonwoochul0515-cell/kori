@@ -33,7 +33,7 @@ export const menuCategories: MenuCategory[] = [
         price: 32000,
         description: "숯불에 직화로 구운 가리비에 수제 명란 소스를 곁들여.",
         tag: "대표",
-        image: "/gallery/menu-myungran-garlic.jpg",
+        image: "/gallery/menu-scallop.jpg",
       },
       {
         name: "명란보쌈",
